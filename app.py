@@ -29,7 +29,7 @@ with open('mlist.pkl', 'rb') as movies_file:
 
 # Function to fetch movie poster
 def fetch_poster(movie_id):
-    url = "https://api.themoviedb.org/3/movie/{}?api_key=0d72cd7210467b278387359a8daa1a9c".format(movie_id)
+    url = "https://api.themoviedb.org/3/movie/{}?api_key=Your_API_key ".format(movie_id)
     data = requests.get(url)
     data = data.json()
     poster_path = data['poster_path']
